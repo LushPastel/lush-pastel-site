@@ -1,65 +1,106 @@
-<body>
-    <head> <!-- FontAwesome for social media icons -->
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-        
-    </head>
-    <header>
-        <div class="top-bar">Where pastels meet perfection.</div>
-        <div class="navbar">
-            <div class="logo-container">
-                <img src="logo.jpg" alt="Lush Pastel Logo" class="logo">
-                <h1 class="site-title">LUSH PASTEL</h1>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">SHOP</a></li>
-                    <li><a href="#">GALLERY</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
-            </nav>
-            <div class="social-icons">
-                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.pinterest.com" target="_blank"><i class="fab fa-pinterest"></i></a>
-                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.x.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
-            </div>
-        </div>
-    </header>
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>My Website</title>  
+    <link rel="stylesheet" href="styles.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+</head>  
+<body>  
 
-    <!-- This is the content area where your main site content goes -->
-    <main class="content">
-        <div class="slider-container">
-            <div class="slider">
-                <div class="slide"><img src="slide1.jpg" alt="Product 1"></div>
-                <div class="slide"><img src="slide2.jpg" alt="Product 2"></div>
-                <div class="slide"><img src="slide3.jpg" alt="Product 3"></div>
-            </div>
-            <button class="prev" onclick="moveSlide(-1)">❮</button>
-            <button class="next" onclick="moveSlide(1)">❯</button>
-        </div>
-    </main>
+    <!-- Top Bar -->  
+    <div class="top-bar">  
+        Where Pastels meet perfection.  
+    </div>  
 
-    <footer class="footer">
-        <div class="footer-section">
-            <h3>Contact Us</h3>
-            <p>Email: contact@lushpastel.com</p>
-            <p>Phone: +1234567890</p>
-        </div>
-        <div class="footer-section">
-            <h3>Working Hours</h3>
-            <p>Monday - Saturday<br>09:00 am - 09:00 pm</p>
-        </div>
-        <div class="footer-section">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-            </ul>
-        </div>
-    </footer>
-</body>
+    <!-- Navbar -->  
+    <nav class="navbar">  
+        <div class="logo-container">  
+            <img src="images/logo.jpg" alt="logo" class="logo">  
+            <h1 class="site-title">LUSH PASTEL</h1>  
+        </div>  
+        <ul class="nav-links">  
+            <li><a href="#" id="home-link">HOME</a></li>  
+            <li><a href="#" id="shop-link">SHOP</a></li>  
+            <li><a href="#" id="gallery-link">GALLERY</a></li>  
+            <li><a href="#" id="contact-link">CONTACT</a></li>  
+        </ul>  
+        <div class="social-icons">  
+            <a href="#"><i class="fab fa-facebook"></i></a>  
+            <a href="#"><i class="fab fa-x"></i></a>  
+            <a href="#"><i class="fab fa-instagram"></i></a>  
+            <a href="#"><i class="fab fa-pinterest"></i></a>  
+            <a href="#"><i class="fab fa-linkedin"></i></a>  
+        </div>  
+    </nav>  
+
+    <!-- Slider -->  
+    <div class="slider-container" id="slider-container">  
+        <div class="slider">  
+            <div class="slide">  
+                <img src="images/jewelry-category.jpg" alt="Image 1">  
+            </div>  
+            <div class="slide">  
+                <img src="images/makeup-category.jpg" alt="Image 2">  
+            </div>  
+            <div class="slide">  
+                <img src="images/clothing-category.jpg" alt="Image 3">  
+            </div>  
+            <div class="slide">  
+                <img src="images/skincare-category.jpg" alt="Image 3">  
+            </div>  
+        </div>  
+    </div>  
+
+    <!-- Category Section -->  
+    <section class="category-section" id="category-section">  
+        <div class="category">  
+            <img src="images/category1.jpg" alt="Category 1">  
+            <div class="overlay">  
+                <h3>Category Title 1</h3>  
+                <p>Shop Now</p>  
+            </div>  
+        </div>  
+        <div class="category">  
+            <img src="images/category2.jpg" alt="Category 2">  
+            <div class="overlay">  
+                <h3>Category Title 2</h3>  
+                <p>Shop Now</p>  
+            </div>  
+        </div>  
+        <div class="category">  
+            <img src="images/category3.jpg" alt="Category 3">  
+            <div class="overlay">  
+                <h3>Category Title 3</h3>  
+                <p>Shop Now</p>  
+            </div>  
+        </div>  
+    </section>  
+
+    <!-- Footer -->  
+    <footer class="footer">  
+        <div class="footer-section">  
+            <h3>About Us</h3>  
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>  
+        </div>  
+        <div class="footer-section">  
+            <h3>Contact Info</h3>  
+            <p>Email: info@example.com</p>  
+            <p>Phone: (123) 456-7890</p>  
+        </div>  
+        <div class="footer-section">  
+            <h3>Quick Links</h3>  
+            <ul>  
+                <li><a href="#">Home</a></li>  
+                <li><a href="#">About</a></li>  
+                <li><a href="#">Services</a></li>  
+                <li><a href="#">Contact</a></li>  
+            </ul>  
+        </div>  
+    </footer>  
+
+    <script src="script.js"></script>  
+
+</body>  
+</html>  

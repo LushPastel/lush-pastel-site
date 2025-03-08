@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Ideas | Lush Pastel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header will be loaded here -->
+    <div id="header"></div>
+
+    <!-- 🎁 Gift Ideas Section --> 
+    <section class="category-section" id="category-section">  
+        <div class="category">  
+            <img src="images/handmade.jpg" alt="Handmade">  
+            <div class="overlay">  
+                <h3>HANDMADE- Crafted with love</h3>  
+                <p>Shop Now</p>  
+            </div>  
+        </div>  
+        <div class="category">  
+            <img src="images/sweets.jpg" alt="Sweet treats">  
+            <div class="overlay">  
+                <h3>Sweet Treats</h3>  
+                <p>Shop Now</p>  
+            </div>  
+        </div>  
+        <div class="category">  
+            <img src="images/games.jpg" alt="Games">  
+            <div class="overlay">  
+                <h3>Play & Fun</h3>  
+                <p>Shop Now</p>  
+            </div>  
+        </div> 
+        <div class="category">  
+            <img src="images/housewarming.jpg" alt="House Warming">  
+            <div class="overlay">  
+                <h3>House Warming</h3>  
+                <p>Shop Now</p>  
+            </div>  
+        </div> 
+        <div class="category">  
+            <img src="images/occasion.jpg" alt="Occasion">  
+            <div class="overlay">  
+                <h3>Occasion- Special Moments</h3>  
+                <p>Shop Now</p>  
+            </div>  
+        </div>  
+    </section>  
+
+   <!-- Footer will be loaded here -->
+   <div id="footer"></div>
+
+   <!-- JavaScript to Load Header & Footer -->
+   <script>
+       document.addEventListener("DOMContentLoaded", function() {
+           // Load Header
+           fetch('header.html')
+               .then(response => response.text())
+               .then(data => {
+                   document.getElementById('header').innerHTML = data;
+               })
+               .catch(error => console.error('Error loading header:', error));
+
+           // Load Footer
+           fetch('footer.html')
+               .then(response => response.text())
+               .then(data => {
+                   document.getElementById('footer').innerHTML = data;
+               })
+               .catch(error => console.error('Error loading footer:', error));
+       });
+   </script>
+
+</body>
+</html>

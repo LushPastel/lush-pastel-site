@@ -13,9 +13,25 @@ document.addEventListener("DOMContentLoaded", function () {
     loadHTML("header", "header.html");
     loadHTML("footer", "footer.html");
 
+    // Like/Dislike functionality
+    document.addEventListener("DOMContentLoaded", function () {
+        const hearts = document.querySelectorAll(".heart-icon");
+    
+        hearts.forEach((heart) => {
+            heart.addEventListener("click", function () {
+                this.classList.toggle("liked"); // Toggle the 'liked' class directly
+            });
+        });
+    });          
+
+    document.addEventListener("click", function (event) {
+        if (event.target.classList.contains("heart-icon")) {
+            event.target.classList.toggle("liked");
+        }
+    });
 
     // Slider functionality
-    setTimeout(() => { // Ensure elements are loaded before running slider script
+    setTimeout(() => {
         const slider = document.querySelector(".slider");
         if (!slider) return;
 
@@ -47,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }, { once: true });
         }
 
-        window.addEventListener('resize', function () {
+        window.addEventListener("resize", function () {
             slideWidth = slides[0].offsetWidth;
             slider.style.transition = "none";
             slider.style.transform = `translateX(${-slideWidth * currentIndex}px)`;

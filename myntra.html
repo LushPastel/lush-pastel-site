@@ -1,0 +1,496 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>My Website</title>  
+  <!-- External CSS file (if any) -->
+  <link rel="stylesheet" href="styles.css">  
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />  
+  <style>
+    /* Heart icon styling using Font Awesome icons */
+    .heart-icon {
+      font-size: 24px;
+      cursor: pointer;
+      /* Start off as white (background color) with a thin black text stroke to simulate an outline */
+      color: white;                    
+      -webkit-text-stroke: 0.5px #ff85a2;
+      transition: color 0.3s ease;
+    }
+    /* Liked state: change heart color to pink.
+       The text stroke remains the same so the outline effect is retained. */
+    .heart-icon.liked {
+      color: #ff85a2;
+    }
+  </style>
+</head>  
+<body>  
+
+  <!-- Header will be loaded here -->  
+  <div id="header"></div>  
+
+  <!-- JavaScript -->  
+  <script src="script.js"></script>
+
+  <main>
+    <aside class="sidebar">
+      <h3>Category</h3>
+      <ul>
+        <li><input type="radio" name="category" checked> All</li>
+        <li><input type="radio" name="category"> Sandals</li>
+        <li><input type="radio" name="category"> Heels</li>
+        <li><input type="radio" name="category"> Flats</li>
+      </ul>
+      <h3>Price</h3>
+      <ul>
+        <li><input type="radio" name="price"> Under ₹500</li>
+        <li><input type="radio" name="price"> ₹500 - ₹1000</li>
+        <li><input type="radio" name="price"> ₹1000 - ₹1500</li>
+      </ul>
+    </aside>
+    
+    <section class="product-section">
+        <div class="myntra-heading">
+            <h2>Myntra Products</h2>
+            <p>Discover the best picks from Myntra curated for you!</p>
+        </div>
+        
+        <!-- Each product -->
+        <div class="product-grid">
+            <div class="product">
+          <!-- The heart icon. It starts as an outlined heart using <i class="far fa-heart">
+               When clicked, the script toggles it to "liked" (solid pink) by replacing "far" with "fas". -->
+          <i class="far fa-heart heart-icon"></i>
+          <img src="https://myntra.com/image/" alt="Product Image">
+          <h3>Product Name</h3>
+          <p>Short product description...</p>
+          <p class="price">US$29.90</p>
+          <a href="#" class="view-on-myntra" data-url="https://www.myntra.com/">View on Myntra</a>
+        </div>
+
+        <div class="product">
+            <i class="far fa-heart heart-icon"></i>
+            <!-- Product Image -->
+    <img src="https://myntra.com/image/" alt="Product Image">
+<!-- Product Details -->
+<h3>Product Name</h3>
+<p>Short product description...</p>
+<p class="price">US$29.90</p>
+
+<!-- View on Myntra Button -->
+<a href="#" class="view-on-myntra" data-url="https://www.myntra.com/">View on Myntra</a>
+</div>
+
+<div class="product">
+    <!-- The heart icon (can be clicked to toggle favorite) -->
+    <i class="far fa-heart heart-icon"></i>
+
+    <!-- Product Image -->
+    <img src="https://myntra.com/image/" alt="Product Image">
+
+<!-- Product Details -->
+<h3>Product Name</h3>
+<p>Short product description...</p>
+<p class="price">US$29.90</p>
+
+    <!-- View on Myntra Button -->
+    <a href="#" class="view-on-myntra" data-url="https://www.myntra.com/">View on Myntra</a>
+</div>
+
+<div class="product">
+    <!-- The heart icon (can be clicked to toggle favorite) -->
+    <i class="far fa-heart heart-icon"></i>
+
+    <!-- Product Image -->
+    <img src="https://myntra.com/image/" alt="Product Image">
+
+<!-- Product Details -->
+<h3>Product Name</h3>
+<p>Short product description...</p>
+<p class="price">US$29.90</p>
+
+    <!-- View on Myntra Button -->
+    <a href="#" class="view-on-myntra" data-url="https://www.myntra.com/">View on Myntra</a>
+</div>
+
+<div class="product">
+    <!-- The heart icon (can be clicked to toggle favorite) -->
+    <i class="far fa-heart heart-icon"></i>
+
+    <!-- Product Image -->
+    <img src="https://myntra.com/image/" alt="Product Image">
+
+<!-- Product Details -->
+<h3>Product Name</h3>
+<p>Short product description...</p>
+<p class="price">US$29.90</p>
+
+    <!-- View on Myntra Button -->
+    <a href="#" class="view-on-myntra" data-url="https://www.myntra.com/">View on Myntra</a>
+</div>
+
+<div class="product">
+    <!-- The heart icon (can be clicked to toggle favorite) -->
+    <i class="far fa-heart heart-icon"></i>
+
+    <!-- Product Image -->
+    <img src="https://myntra.com/image/" alt="Product Image">
+
+<!-- Product Details -->
+<h3>Product Name</h3>
+<p>Short product description...</p>
+<p class="price">US$29.90</p>
+
+    <!-- View on Myntra Button -->
+    <a href="#" class="view-on-myntra" data-url="https://www.myntra.com/">View on Myntra</a>
+</div>
+
+<div class="product">
+    <!-- The heart icon (can be clicked to toggle favorite) -->
+    <i class="far fa-heart heart-icon"></i>
+
+    <!-- Product Image -->
+    <img src="https://myntra.com/image/" alt="Product Image">
+
+<!-- Product Details -->
+<h3>Product Name</h3>
+<p>Short product description...</p>
+<p class="price">US$29.90</p>
+
+    <!-- View on Myntra Button -->
+    <a href="#" class="view-on-myntra" data-url="https://www.myntra.com/">View on Myntra</a>
+</div>
+
+<div class="product">
+    <!-- The heart icon (can be clicked to toggle favorite) -->
+    <i class="far fa-heart heart-icon"></i>
+
+    <!-- Product Image -->
+    <img src="https://myntra.com/image/" alt="Product Image">
+
+<!-- Product Details -->
+<h3>Product Name</h3>
+<p>Short product description...</p>
+<p class="price">US$29.90</p>
+
+    <!-- View on Myntra Button -->
+    <a href="#" class="view-on-myntra" data-url="https://www.myntra.com/">View on Myntra</a>
+</div>
+
+<div class="product">
+    <!-- The heart icon (can be clicked to toggle favorite) -->
+    <i class="far fa-heart heart-icon"></i>
+
+    <!-- Product Image -->
+    <img src="https://myntra.com/image/" alt="Product Image">
+
+<!-- Product Details -->
+<h3>Product Name</h3>
+<p>Short product description...</p>
+<p class="price">US$29.90</p>
+
+    <!-- View on Myntra Button -->
+    <a href="#" class="view-on-myntra" data-url="https://www.myntra.com/">View on Myntra</a>
+</div>
+
+<div class="product">
+    <!-- The heart icon (can be clicked to toggle favorite) -->
+    <i class="far fa-heart heart-icon"></i>
+
+    <!-- Product Image -->
+    <img src="https://myntra.com/image/" alt="Product Image">
+
+<!-- Product Details -->
+<h3>Product Name</h3>
+<p>Short product description...</p>
+<p class="price">US$29.90</p>
+
+    <!-- View on Myntra Button -->
+    <a href="#" class="view-on-myntra" data-url="https://www.myntra.com/">View on Myntra</a>
+</div>
+
+<div class="product">
+    <!-- The heart icon (can be clicked to toggle favorite) -->
+    <i class="far fa-heart heart-icon"></i>
+
+    <!-- Product Image -->
+    <img src="https://myntra.com/image/" alt="Product Image">
+
+<!-- Product Details -->
+<h3>Product Name</h3>
+<p>Short product description...</p>
+<p class="price">US$29.90</p>
+
+    <!-- View on Myntra Button -->
+    <a href="#" class="view-on-myntra" data-url="https://www.myntra.com/">View on Myntra</a>
+</div>
+
+<div class="product">
+    <!-- The heart icon (can be clicked to toggle favorite) -->
+    <i class="far fa-heart heart-icon"></i>
+
+    <!-- Product Image -->
+    <img src="https://myntra.com/image/" alt="Product Image">
+
+<!-- Product Details -->
+<h3>Product Name</h3>
+<p>Short product description...</p>
+<p class="price">US$29.90</p>
+
+    <!-- View on Myntra Button -->
+    <a href="#" class="view-on-myntra" data-url="https://www.myntra.com/">View on Myntra</a>
+</div>
+
+<div class="product">
+    <!-- The heart icon (can be clicked to toggle favorite) -->
+    <i class="far fa-heart heart-icon"></i>
+
+    <!-- Product Image -->
+    <img src="https://myntra.com/image/" alt="Product Image">
+
+<!-- Product Details -->
+<h3>Product Name</h3>
+<p>Short product description...</p>
+<p class="price">US$29.90</p>
+
+    <!-- View on Myntra Button -->
+    <a href="#" class="view-on-myntra" data-url="https://www.myntra.com/">View on Myntra</a>
+</div>
+
+<div class="product">
+    <!-- The heart icon (can be clicked to toggle favorite) -->
+    <i class="far fa-heart heart-icon"></i>
+
+    <!-- Product Image -->
+    <img src="https://myntra.com/image/" alt="Product Image">
+
+<!-- Product Details -->
+<h3>Product Name</h3>
+<p>Short product description...</p>
+<p class="price">US$29.90</p>
+
+    <!-- View on Myntra Button -->
+    <a href="#" class="view-on-myntra" data-url="https://www.myntra.com/">View on Myntra</a>
+</div>
+
+<div class="product">
+    <!-- The heart icon (can be clicked to toggle favorite) -->
+    <i class="far fa-heart heart-icon"></i>
+
+    <!-- Product Image -->
+    <img src="https://myntra.com/image/" alt="Product Image">
+
+<!-- Product Details -->
+<h3>Product Name</h3>
+<p>Short product description...</p>
+<p class="price">US$29.90</p>
+
+    <!-- View on Myntra Button -->
+    <a href="#" class="view-on-myntra" data-url="https://www.myntra.com/">View on Myntra</a>
+</div>
+
+<div class="product">
+    <!-- The heart icon (can be clicked to toggle favorite) -->
+    <i class="far fa-heart heart-icon"></i>
+
+    <!-- Product Image -->
+    <img src="https://myntra.com/image/" alt="Product Image">
+
+<!-- Product Details -->
+<h3>Product Name</h3>
+<p>Short product description...</p>
+<p class="price">US$29.90</p>
+
+    <!-- View on Myntra Button -->
+    <a href="#" class="view-on-myntra" data-url="https://www.myntra.com/">View on Myntra</a>
+</div>
+
+<div class="product">
+    <!-- The heart icon (can be clicked to toggle favorite) -->
+    <i class="far fa-heart heart-icon"></i>
+
+    <!-- Product Image -->
+    <img src="https://myntra.com/image/" alt="Product Image">
+
+<!-- Product Details -->
+<h3>Product Name</h3>
+<p>Short product description...</p>
+<p class="price">US$29.90</p>
+
+    <!-- View on Myntra Button -->
+    <a href="#" class="view-on-myntra" data-url="https://www.myntra.com/">View on Myntra</a>
+</div>
+
+<div class="product">
+    <!-- The heart icon (can be clicked to toggle favorite) -->
+    <i class="far fa-heart heart-icon"></i>
+
+    <!-- Product Image -->
+    <img src="https://myntra.com/image/" alt="Product Image">
+
+<!-- Product Details -->
+<h3>Product Name</h3>
+<p>Short product description...</p>
+<p class="price">US$29.90</p>
+
+    <!-- View on Myntra Button -->
+    <a href="#" class="view-on-myntra" data-url="https://www.myntra.com/">View on Myntra</a>
+</div>
+
+<div class="product">
+    <!-- The heart icon (can be clicked to toggle favorite) -->
+    <i class="far fa-heart heart-icon"></i>
+
+    <!-- Product Image -->
+    <img src="https://myntra.com/image/" alt="Product Image">
+
+<!-- Product Details -->
+<h3>Product Name</h3>
+<p>Short product description...</p>
+<p class="price">US$29.90</p>
+
+    <!-- View on Myntra Button -->
+    <a href="#" class="view-on-myntra" data-url="https://www.myntra.com/">View on Myntra</a>
+</div>
+
+<div class="product">
+    <!-- The heart icon (can be clicked to toggle favorite) -->
+    <i class="far fa-heart heart-icon"></i>
+
+    <!-- Product Image -->
+    <img src="https://myntra.com/image/" alt="Product Image">
+
+<!-- Product Details -->
+<h3>Product Name</h3>
+<p>Short product description...</p>
+<p class="price">US$29.90</p>
+
+    <!-- View on Myntra Button -->
+    <a href="#" class="view-on-myntra" data-url="https://www.myntra.com/">View on Myntra</a>
+</div>
+
+<div class="product">
+    <!-- The heart icon (can be clicked to toggle favorite) -->
+    <i class="far fa-heart heart-icon"></i>
+
+    <!-- Product Image -->
+    <img src="https://myntra.com/image/" alt="Product Image">
+
+<!-- Product Details -->
+<h3>Product Name</h3>
+<p>Short product description...</p>
+<p class="price">US$29.90</p>
+
+    <!-- View on Myntra Button -->
+    <a href="#" class="view-on-myntra" data-url="https://www.myntra.com/">View on Myntra</a>
+</div>
+
+<div class="product">
+    <!-- The heart icon (can be clicked to toggle favorite) -->
+    <i class="far fa-heart heart-icon"></i>
+
+    <!-- Product Image -->
+    <img src="https://myntra.com/image/" alt="Product Image">
+
+<!-- Product Details -->
+<h3>Product Name</h3>
+<p>Short product description...</p>
+<p class="price">US$29.90</p>
+
+    <!-- View on Myntra Button -->
+    <a href="#" class="view-on-myntra" data-url="https://www.myntra.com/">View on Myntra</a>
+</div>
+
+<div class="product">
+    <!-- The heart icon (can be clicked to toggle favorite) -->
+    <i class="far fa-heart heart-icon"></i>
+
+    <!-- Product Image -->
+    <img src="https://myntra.com/image/" alt="Product Image">
+
+<!-- Product Details -->
+<h3>Product Name</h3>
+<p>Short product description...</p>
+<p class="price">US$29.90</p>
+
+    <!-- View on Myntra Button -->
+    <a href="#" class="view-on-myntra" data-url="https://www.myntra.com/">View on Myntra</a>
+</div>
+
+<div class="product">
+    <!-- The heart icon (can be clicked to toggle favorite) -->
+    <i class="far fa-heart heart-icon"></i>
+
+    <!-- Product Image -->
+    <img src="https://myntra.com/image/" alt="Product Image">
+
+<!-- Product Details -->
+<h3>Product Name</h3>
+<p>Short product description...</p>
+<p class="price">US$29.90</p>
+
+    <!-- View on Myntra Button -->
+    <a href="#" class="view-on-myntra" data-url="https://www.myntra.com/">View on Myntra</a>
+</div>
+
+        <!-- Add more product blocks as required -->
+      </div>        
+    </section>
+  </main>
+
+  <!-- Footer will be loaded here -->  
+  <div id="footer"></div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const viewButtons = document.querySelectorAll(".view-on-myntra");
+    
+        viewButtons.forEach(button => {
+            button.addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent default link behavior
+    
+                // Get the product URL from the data attribute
+                const productUrl = this.getAttribute("data-url");
+    
+                // Check if the URL exists
+                if (productUrl && productUrl.trim() !== "") {
+                    console.log("Opening URL:", productUrl); // Debugging log
+                    window.open(productUrl, "_blank"); // Open in a new tab
+                } else {
+                    console.error("No product URL found.");
+                }
+            });
+        });
+    });
+    </script>
+    
+  <!-- JavaScript for toggling the heart -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const hearts = document.querySelectorAll(".heart-icon");
+      hearts.forEach((heart) => {
+        heart.addEventListener("click", function (e) {
+          e.stopPropagation();
+          // Toggle liked/unliked state:
+          if (heart.classList.contains("liked")) {
+            // Change to unliked state:
+            heart.classList.remove("liked");
+            heart.classList.remove("fas");  // Remove solid class
+            heart.classList.add("far");       // Add outlined class
+          } else {
+            // Change to liked state:
+            heart.classList.add("liked");
+            heart.classList.remove("far");
+            heart.classList.add("fas");
+          }
+        });
+      });
+    });
+  </script>
+  <!-- If you have external script, you can remove this inline script -->
+</body>  
+</html>
